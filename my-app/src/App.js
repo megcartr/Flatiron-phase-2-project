@@ -1,3 +1,8 @@
+import React from "react";
+import Fitness from "./Fitness";
+import NavBar from "./NavBar";
+import Header from "./Header";
+import Nutrition from "./Nutrition";
 import logo from './logo.svg';
 import './App.css';
 
