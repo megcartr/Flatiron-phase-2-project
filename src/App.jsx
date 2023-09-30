@@ -1,18 +1,19 @@
-import { useState } from 'react'
+
+// import {Route, Switch, BrowserRouter} from "react-router-dom"
 import './App.css'
 import Header from './Components/Header'
 import NavBar from './Components/NavBar'
+// import Fitness from './Components/Fitness'
+// import Nutrition from './Components/Nutrition'
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  
   return (
-    <>
+    <div>
       <Header/>
       <NavBar/>
-      
-    </>
+      </div>
   )
 }
 
-export default App
+export default App;
