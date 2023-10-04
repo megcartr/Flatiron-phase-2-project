@@ -9,12 +9,12 @@ function Nutrition() {
         setCount(count + 1)
     }
 
-    function decrement(){k
+    function decrement(){
         setCount(count - 1)
     }
 
     return(
-        <div>
+        <div id="nutrition">
             <h1>{count}</h1>
             <button onClick={decrement}>-</button>
             <button onClick={increment}>+</button>

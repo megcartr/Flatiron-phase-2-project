@@ -1,10 +1,10 @@
 import React from "react";
 
-function Header() {
+function Home() {
     return(
         <header>
             <h1>HEALTH TRACKER</h1>
         </header>
     )
 }
-export default Header;
+export default Home;

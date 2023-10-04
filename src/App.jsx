@@ -1,15 +1,25 @@
 import React from "react";
 import './App.css'
-import Header from './Components/Header'
+import Home from './Components/Home'
 import NavBar from './Components/NavBar'
+// import {Route, Switch} from "react-router-dom"
+// import Fitness from './Components/Fitness'
+// import Nutrition from './Components/Nutrition'
 
 
 function App() {
   
   return (
     <div>
-      <Header/>
       <NavBar/>
+      {/* <Switch>
+        <Route path="/fitness">
+          <Fitness/>
+        </Route>
+        <Route path="/nutrition">
+          <Nutrition/>
+        </Route>
+      </Switch> */}
     </div>
   )
 }

@@ -1,13 +1,21 @@
 import React from "react";
-// import Fitness from './Components/Fitness'
-// import Nutrition from './Components/Nutrition'
+import {NavLink} from "react-router-dom"
+
 
 function NavBar() {
     return(
         <nav>
-            <a href={'#fitness'}>Fitness</a>
-            {" "}
-            <a href={'#nutrition'}>Nutrition</a>
+            <ul>
+                <li>
+                    <NavLink to="/home">Home</NavLink>
+                </li>
+                <li>
+                    <NavLink to="/fitness">Fitness</NavLink>
+                </li>
+                <li>
+                    <NavLink to="/nutrition">Nutrition</NavLink>
+                </li>
+            </ul>
         </nav>
     )
 }
