@@ -1,19 +1,16 @@
 import React from "react";
-import Fitness from './Fitness'
-import Nutrition from './Nutrition'
+// import Fitness from './Components/Fitness'
+// import Nutrition from './Components/Nutrition'
 
-function NavBar({onChangePage}) {
-
-    function linkPage(e) {
-        e.preventDefault()
-        onChangePage(e.target.pathname)
-    }
+function NavBar() {
     return(
         <nav>
-            <a onClick={linkPage} href="/Fitness">Fitness</a>
-            <a onClick={linkPage} href="/Nutrition">Nutrition</a>
+            <a href={'#fitness'}>Fitness</a>
+            {" "}
+            <a href={'#nutrition'}>Nutrition</a>
         </nav>
     )
 }
+
 
 export default NavBar;

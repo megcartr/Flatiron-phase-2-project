@@ -1,12 +1,25 @@
 import React from "react";
-import {useEffect, useState} from "react";
+import {useState} from "react";
 
-function NutritionPage() {
-    const [nutrition, setNutrition] = useState;
+function Nutrition() {
 
-    useEffect( () => {
-        fetch("/nutrition.json")
-        .then(r => r.json())
-        .then(data => setNutrition(data))
-    })
+    const [count, setCount]=useState(0);
+
+    function increment(){
+        setCount(count + 1)
+    }
+
+    function decrement(){k
+        setCount(count - 1)
+    }
+
+    return(
+        <div>
+            <h1>{count}</h1>
+            <button onClick={decrement}>-</button>
+            <button onClick={increment}>+</button>
+        </div>
+    )
 }
+
+export default Nutrition;

@@ -1,21 +1,19 @@
 import React from "react";
 import {useEffect, useState} from "react";
 
-function FitnessPage() {
-    const [fitness, setFitness] = useState;
 
-    useEffect( () => {
-        fetch("/Fitness.json", {
-            headers: {
-                'Content-Type': 'application/json',
-                'Accept': 'application/json'
-            }
-        })
-        .then(r => r.json())
-        .then(data => setFitness(data))
-    })
+// function Fitness() {
+//     const [fitness, setFitness] = useState([]);
 
-    return(
-        <div id="fitness"></div>
-    )
-}
+//     useEffect(() => {
+//         fetch("/Fitness.json") 
+//         .then(response => response.json())
+//         .then(data => setFitness(data))
+//     },[])
+
+//     return(
+//         <div id="fitness"></div>
+//     )
+// }
+
+export default Fitness;
