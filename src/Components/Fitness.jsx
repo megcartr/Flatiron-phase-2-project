@@ -1,25 +1,27 @@
 import React from "react";
 import {useEffect, useState} from "react";
-// import exercises from "./exercises.js";
+
 
 
 function Fitness() {
     const [fitness, setFitness] = useState([]);
 
     useEffect(() => {
-        fetch("./exercises.json", {
+        fetch("http://localhost:3000/exercises", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
             },
-            body: JSON.stringify(setFitness),
+            body: JSON.stringify(fitness)
         })
-        .then(response => response.json())
+        .then((response) => response.json())
         .then(data =>setFitness(data.fitness))
     },[])
 
     return(
-        <div id="fitness"></div>
+        <div id="fitness">
+        {fitness}
+        </div>
     )
 }
 
