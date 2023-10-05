@@ -23,16 +23,25 @@ function Nutrition() {
 
     return(
         <div id="nutrition">
+            
+            <h2>FRUITS</h2>
+
             <h1>{count}</h1>
             <button onClick={decrement}>-</button>
             <button onClick={increment}>+</button>
 
-            {/* <h2>FRUITS</h2>
-
             <h2>VEGETABLES</h2>
+            <h1>{count}</h1>
+            <button onClick={decrement}>-</button>
+            <button onClick={increment}>+</button>
 
-            <h2>WATER</h2> */}
+            <h2>WATER</h2> 
+            <h1>{count}</h1>
+            <button onClick={decrement}>-</button>
+            <button onClick={increment}>+</button>
         </div>
+
+
     )
 }
 
