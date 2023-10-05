@@ -1,27 +1,24 @@
 import React from "react";
 import './App.css'
-import Home from './Components/Home'
 import NavBar from './Components/NavBar'
-// import {Route, Switch} from "react-router-dom"
-// import Fitness from './Components/Fitness'
-// import Nutrition from './Components/Nutrition'
+import { BrowserRouter } from "react-router-dom"
+import {Route, Routes} from "react-router-dom"
+import Home from './Components/Home'
+import Fitness from './Components/Fitness'
+import Nutrition from './Components/Nutrition'
 
 
 function App() {
-  
   return (
     <div>
-      <NavBar/>
-      {/* <Switch>
-        <Route path="/home">
-        </Route>
-        <Route path="/fitness">
-          <Fitness/>
-        </Route>
-        <Route path="/nutrition">
-          <Nutrition/>
-        </Route>
-      </Switch> */}
+      <BrowserRouter>
+        <NavBar/>
+          <Routes>
+            <Route path="/home" Component={Home}/>
+            <Route path="/fitness" Component={Fitness}/>
+            <Route path="/nutrition" Component={Nutrition}/>
+          </Routes>
+      </BrowserRouter>
     </div>
   )
 }

@@ -1,5 +1,7 @@
+const exercises =
+
 {
-    "fitness": [
+    "exercises": [
         {
             "id": 1,
             "type": "Walking",
@@ -29,3 +31,5 @@
         }
     ]
 }
+
+export default exercises;
