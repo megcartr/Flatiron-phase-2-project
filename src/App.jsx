@@ -13,6 +13,8 @@ function App() {
     <div>
       <NavBar/>
       {/* <Switch>
+        <Route path="/home">
+        </Route>
         <Route path="/fitness">
           <Fitness/>
         </Route>
