@@ -14,9 +14,10 @@ function App() {
       <BrowserRouter>
         <NavBar/>
           <Routes>
+            <Route path="/" Component={Home}/>
             <Route path="/home" Component={Home}/>
-            <Route path="/fitness" Component={Fitness}/>
-            <Route path="/nutrition" Component={Nutrition}/>
+            <Route exact path="/fitness" Component={Fitness}/>
+            <Route exact path="/nutrition" Component={Nutrition}/>
           </Routes>
       </BrowserRouter>
     </div>

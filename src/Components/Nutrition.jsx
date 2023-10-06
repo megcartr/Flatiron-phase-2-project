@@ -15,8 +15,6 @@ function Nutrition() {
             <h2>WATER</h2> 
             <Increment/>
         </div>
-
-
     )
 }
 
