@@ -23,9 +23,19 @@ h1 {
   color:white;
 }
 
+h2 {
+  font-size: 20px;
+  color:white;
+}
+
 .active{
   background-color: black;
   color: #213547;
   border-radius: 2rem;
   display: inline-block;
+}
+
+img{
+  height: 100px;
+  width: 100px;
 }
