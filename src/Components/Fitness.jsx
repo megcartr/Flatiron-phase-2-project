@@ -1,5 +1,4 @@
-import React from "react";
-import {useEffect, useState} from "react";
+import React, {useEffect, useState} from "react";
 
 
 
@@ -14,11 +13,11 @@ function Fitness() {
 
     return(
         <div id="fitness">
-        {excercises.map((id, type, image) => (
+        {fitness.map((fit) => (
         <excercises
-            id={id}
-            type={type}
-            image={image}/>
+        key={fit.id}
+        type={fit.type}
+        image={fit.image}/>
     ))}
         </div>
     )
