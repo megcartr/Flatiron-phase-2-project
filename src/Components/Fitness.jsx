@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from "react";
-
+import Exercises from "./Exercises";
 
 
 function Fitness() {
@@ -8,13 +8,13 @@ function Fitness() {
     useEffect(() => {
         fetch("http://localhost:3000/exercises")
         .then((response) => response.json())
-        .then(data =>setFitness(data))
+        .then(data =>{setFitness(data)})
     },[])
 
     return(
         <div id="fitness">
         {fitness.map((fit) => (
-        <excercises
+        <Exercises
         key={fit.id}
         type={fit.type}
         image={fit.image}/>
