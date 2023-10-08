@@ -4,9 +4,11 @@ function Home() {
     return(
         <header>
             <h1>HEALTH TRACKER</h1>
+            <h2>Keep track of your daily health practices of hold yourself accountable
+                with the Health Tracker App!
+            </h2>
         </header>
     )
 }
 export default Home;
 
-//create a summary, dont forget readme
